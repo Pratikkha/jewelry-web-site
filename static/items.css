@@ -1,0 +1,133 @@
+.item_box{
+  margin-inline: 0%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  background-color: rgb(250, 242, 242);
+  /* backgropund  */
+}
+
+.item_container {
+  margin-left: 4%;
+    display: inline-block;
+    width:20%;
+    border:solid;
+    border-radius: 12px;
+    border-width: .32px;
+    border-color: #ccc7be;
+    /* border-color: black; */
+    align-content: center;
+    z-index: 1;
+    margin-top: 2.7%;
+  background-color: white;
+}
+
+.item_container img {
+    width: 100%;
+    height: fit-content;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+.item_container p{
+    text-align: center;
+    /* color:gray */
+}
+.cart_button{
+    width:100%;
+    height:80%;
+}
+.item_hovor_image{
+    display:none;
+}
+
+
+.item_container .hover{
+    display:none;
+  }
+  .item_container:hover .original{
+    display:none;
+    background-color: rgba(0,0,0, 0.61);
+  }
+  
+  .item_container:hover{
+    box-shadow: 2px 2px 10px rgba(79, 79, 79, 0.61);
+  }
+  
+  .item_container:hover .hover{
+    display:inline-block;
+  }
+  .cart_button{
+    margin-left:0%;
+    background-color: #ccc7be;
+    padding:10px;
+    border: solid;
+    border-color: #0e7e8200;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+.price{
+  color:rgb(238, 188, 29);
+  font-size: larger;
+}
+
+.discription{
+  color:gray;
+  /* font-size: large; */
+}
+
+/* CSS */
+.sort_btn {
+  appearance: none;
+  background-color: #005967;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.sort_btn:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.sort_btn:hover {
+  background-color: #2c974b;
+}
+
+.sort_btn:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.sort_btn:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.sort_btn:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/admin.css">
+    <title>Admin</title>
+</head>
+<body>
+    <form method="post">
+        <h2>Insert product into database</h2>
+        <p>note image should be inserted in static/assets directory first</p>
+        <div>
+            <label for="image">image file name</label>
+            <input type="text" id="image" name="image" required>
+        </div>
+        <div>
+            <label for="hover_image"> hover_image</label>
+            <input type="text" id="hover_image" name="hover_image" required>
+        </div>
+        <div>
+            <label for="discription"> discription</label>
+            <input type="text" id="discription" name="discription" required>
+        </div>
+        <div>
+            <label for="type">type</label>
+            <input type="text" id="type" name="type" required>
+        </div>
+        <div>
+            <label for="price">price</label>
+            <input type="number" id="price" name="price" required>
+        </div>
+        <div>
+            <label for="collection">collection</label>
+            <input type="text" id="collection" name="collection" required>
+        </div>
+        <button type="submit">Add record</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.item_box{
+    display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item_container{
+    width:22.5%;
+    margin-left: 1.8%;
+    margin-top:1.2%;
+}
+
+.item_container img{
+    width:100%;
+    border: solid;
+    border-color: gray;
+    border-radius: 8px;
+    border-width: .5px;
+}
+/* .item_box .item_container:hover{
+    background-color: rgba(0, 0, 0, 0.175);
+
+} */

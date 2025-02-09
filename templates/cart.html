@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="../static/cart.css">
+{% endblock %}
+
+{% block title %}
+Cart | PC Jewellers
+{% endblock %}
+
+{% block content %}
+<h1 style="color: white; background-color: rgb(245, 159, 31);">Cart</h1>
+<a href="/checkout" class="ck">Checkout</a>
+<br>
+
+<p style="margin: 30px;">total: {{total}}</p>
+{% for item in items %}
+<div class="item_container">
+    <span class="cart_image">
+    <img src="{{item['image_url']}}">
+    </span>
+    <div class="cart_container">
+    <P class="Discription">{{item['discription']}}</P>
+    <span class="price">price:<span style="font-size: larger;"><span>&#8377</span>{{item['price']}}</span></span>
+    <span> <p class="qty">{{item['qty']}}</p></span>
+    <form method="POST">
+        <input type="hidden" name="form_id" value="{{item['_id']}}">
+        <button type="submit" class="remove">REMOVE ITEM</button>
+    </form>
+</div>
+</div>
+{% endfor %}
+
+{% endblock %}

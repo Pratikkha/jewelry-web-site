@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="../static/contact.css">
+{% endblock %}
+
+{% block title %}
+Contact-us | PC Jewellers
+{% endblock %}
+
+{% block content %}
+<img src="../static/assets/contact_us.jpg" style="width: 100%;">
+<section id="contact-us">
+    <h2>GET IN TOUCH</h2>
+    <p>TOLL FREE NO: 1800-120-1434</p>
+    <p><a href="mailto:getintouch@pcjeweller.com">GETINTOUCH@pcj.ac.in</a></p>
+    <address style="text-align: center;">
+        Transforming Retail Pvt. Ltd.<br>
+        1st Floor, 2716, Bank Street<br>
+        Karol Bagh, New Delhi - 110005
+    </address>
+    <p>Toll Free Number - 1800-120-1434</p>
+    <p>Corporate Queries/Bulk Orders - +91-7669389127</p>
+    <p><a href="mailto:getintouch@pcjeweller.com">getintouch@pcj.ac.in</a></p>
+    <div class="contact-form">
+        <form method="post">
+            <input type="text" placeholder="Name" id="name" name="name" required>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <textarea placeholder="Message" id="textarea" name="textarea" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="../static/index.css">
+<link rel="stylesheet" href="../static/Slider.css">
+{% endblock %}
+
+{% block title %}
+Home | PC Jewellers
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="slider">
+
+</div>
+<br>
+<hr style="text-shadow:10px;">
+<br>
+<h2 style="width:100%; text-align: center;">Top Collection</h2>
+<div class="item_box">
+{% for item in home_item %}
+<div class="item_container">
+    <a href="/{{item['collection']}}">
+        <img src="{{item['image']}}" class="original">
+    </a>
+</div>
+
+{% endfor %}
+</div>
+<script>
+    let element=document.getElementsByClassName(".item_container");
+    element.addEventListener("hover",focus());
+    function focus()
+    {
+        let element=document.getElementsByClassName(".item_box");
+        element.style.background-color.black;
+    }
+</script>
+{% endblock %}
