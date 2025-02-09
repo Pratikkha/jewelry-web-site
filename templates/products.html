@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="../static/items.css">
+{% endblock %}
+
+{% block title %}
+All products | PC Jewellers
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .type_label {
+        font-size: 30px;
+        font-weight: 540;
+        text-transform: capitalize;
+        margin-left: 50px;
+    }
+</style>
+
+<p class="type_label" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic;">rings</p>
+<br>
+<hr>
+
+{% for item in rings %}
+
+<div class="item_container">
+    <img src="{{item['image_url']}}" class="original">
+    <img src="{{item['hover_image']}}" class="hover">
+    <hr style="color:#ccc7be">
+    <p class="discription" >{{item['discription']}}</p>
+    <br>
+    <p class="price"><span>&#8377</span>{{item['price']}}</p>
+    <br>
+
+    <form method="POST">
+        <input type="hidden" name="form_id" value="{{item['_id']}}">
+        <button type="submit" class="cart_button">ADD TO CART</button>
+    </form>
+    
+</div>
+
+{% endfor %}
+
+<p class="type_label">ear rings</p>
+<br>
+<hr>
+
+{% for item in ear_rings %}
+
+<div class="item_container">
+    <img src="{{item['image_url']}}" class="original">
+    <img src="{{item['hover_image']}}" class="hover">
+    <hr style="color:#ccc7be">
+    <p class="discription" >{{item['discription']}}</p>
+    <br>
+    <p class="price"><span>&#8377</span>{{item['price']}}</p>
+    <br>
+
+    <form method="POST">
+        <input type="hidden" name="form_id" value="{{item['_id']}}">
+        <button type="submit" class="cart_button">ADD TO CART</button>
+    </form>
+    
+</div>
+
+{% endfor %}
+
+<p class="type_label">bracelates</p>
+<br>
+<hr>
+
+{% for item in bracelates %}
+
+<div class="item_container">
+    <img src="{{item['image_url']}}" class="original">
+    <img src="{{item['hover_image']}}" class="hover">
+    <hr style="color:#ccc7be">
+    <p class="discription" >{{item['discription']}}</p>
+    <br>
+    <p class="price"><span>&#8377</span>{{item['price']}}</p>
+    <br>
+
+    <form method="POST">
+        <input type="hidden" name="form_id" value="{{item['_id']}}">
+        <button type="submit" class="cart_button">ADD TO CART</button>
+    </form>
+    
+</div>
+
+{% endfor %}
+
+<p class="type_label">necklaces</p>
+<br>    
+<hr>
+
+{% for item in necklaces %}
+
+<div class="item_container">
+    <img src="{{item['image_url']}}" class="original">
+    <img src="{{item['hover_image']}}" class="hover">
+    <hr style="color:#ccc7be">
+    <p class="discription" >{{item['discription']}}</p>
+    <br>
+    <p class="price"><span>&#8377</span>{{item['price']}}</p>
+    <br>
+
+    <form method="POST">
+        <input type="hidden" name="form_id" value="{{item['_id']}}">
+        <button type="submit" class="cart_button">ADD TO CART</button>
+    </form>
+    
+</div>
+
+{% endfor %}
+
+<script>
+    function hovor(item){
+
+    }
+</script>
+
+{% endblock %}

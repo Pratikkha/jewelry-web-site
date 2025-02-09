@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="../static/items.css">
+{% endblock %}
+
+{% block title %}
+{{item_name}} | PC Jewellers
+{% endblock %}
+
+{% block content %}
+
+
+<form method="POST">
+    <button type="submit" name="desc" class="sort_btn">SORT HIGH-LOW</button>
+    <br><br>
+    <button type="submit" name="asec" class="sort_btn">SORT LOW-HIGH</button>
+</form>
+<div class="item_box">
+{% for item in items %}
+
+<div class="item_container" onmouseover="hover(this)">
+    <img src="{{item['image_url']}}" class="original">
+    <img src="{{item['hover_image']}}" class="hover">
+    <hr style="color:#ccc7be">
+    <p class="discription" >{{item['discription']}}</p>
+    <br>
+    <p class="price"><span>&#8377</span>{{item['price']}}</p>
+    <br>
+
+    <form method="POST" >
+        <input type="hidden" name="form_id" value="{{item['_id']}}">
+        <button type="submit" class="cart_button">ADD TO CART</button>
+    </form>
+    
+</div>
+{% endfor %}
+</div>
+<script>
+    function hovor(item){
+        let element=document.getElementsByClassName(".item_box");
+        element.style.opacity=".3";
+        item.style.opacity="0";
+    }
+</script>
+
+{% endblock %}
