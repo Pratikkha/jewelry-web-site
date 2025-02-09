@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+    height: 100%;
+	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 {color: #12a8e1;}
+div.logo {
+	max-width: 240px;
+	float: left;
+	padding: 5px;
+}
+
+
+
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+
+@media only screen and (max-width: 360px) {
+	label{padding:5px 0px;}
+	nav{top:47px;}
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 60PX;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #12a8e1;
+}
+h1{
+	text-transform: uppercase;
+	font-size: 3.5em;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-weight: 100;
+	margin: 0;
+	text-shadow: 2px 0 #000;
+}
+.hero-subtitle {
+	font-size: 2.5em;
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	font: bold;
+}
+@media screen and (max-width: 800px) {
+	h1{
+		font-size: 2.5em;
+	}
+	.hero-subtitle {
+		font-size: 2em;
+	}
+}
+@media screen and (max-width: 585px) {
+	h1{
+		font-size: 2em;
+	}
+	.hero-subtitle {
+		font-size: 1.5em;
+	}
+}
+
+.content {
+	margin: auto;
+	max-width: 800px;
+	padding: 3em;
+	text-align: center;
+	color: #808080;
+}
+.blue-text{
+	color: #12a8e1;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	position: relative;
+}
+#text {
+	padding-top: 1em;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+#imageGrid {
+	max-width: 1200px;
+	margin: auto;
+}
+@media (min-width: 500px) {
+	.grid {
+    	display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+    	grid-gap: 2rem;
+  	}
+}
+@media (min-width: 800px) {
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+.grid-group {
+	margin-bottom: 3rem;
+	font-size: .7em;
+	padding: 0 10px;
+}
+@media (min-width: 500px) {
+	.grid-group {
+		margin-bottom: 0;
+  	}
+}
+.blue {
+	color: #12a8e1;
+	font-weight: bold;
+}
+
+footer {
+	background-color: #F5F5F5;
+	color: #000;
+	margin-top: 2em;
+}
+.footerColumn {
+	float: left;
+	width: 50%;
+}
+.footerRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+  .footerColumn {
+    width: 100%;
+	text-align: center;
+  }
+}
+
+#Copyright {
+	padding-right: 100px;
+	padding-top: 1em;
+	text-align: right;
+}
+@media screen and (max-width: 600px) {
+	#Copyright {
+		width: 100%;
+	  text-align: center;
+	  padding-right: 0;
+  }
+}
+.footerMenu {
+	list-style-type: none;
+	display: inline;
+	padding-right: 1em;
+	padding-top: 1em;
+}
+.footerMenu a:link {
+	text-decoration: none;
+	color: #12a8e1;
+}
+.footerMenu a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.footerMenu a:visited  {
+	text-decoration: none;
+	color: #12a8e1;
+}
+.footerMenu a:active  {
+	text-decoration: none;
+	color: #12a8e1;
+}
+.blueLink {color: #12a8e1;}
+
+/* Social Media Icons */
+#SocialMedia {
+	padding-left: 150px;
+}
+@media screen and (max-width: 900px) {
+  #SocialMedia {
+	padding-left: 0;
+  }
+}
+.fab {
+  padding: 10px;
+  font-size: 20px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fab:hover {
+    color: #12a8e1;
+}
+.fa-facebook-f {
+  color: #808080;
+}
+.fa-twitter {
+  color: #808080;
+}
+.fa-linkedin-in {
+  color: #808080;
+}
+
+#services {
+	max-width: 1200px;
+	margin: auto;
+}
+
+@media (min-width: 500px) {
+	.grid-services {
+    	display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+    	grid-gap: 2rem;
+  	}
+}
+@media (min-width: 800px) {
+	.grid-services {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.grid-group-services {
+	margin-bottom: 3rem;
+	font-size: .7em;
+	padding: 0 10px;
+}
+@media (max-width: 500px) {
+	.grid-group-services {
+		height: 100px;
+  	}
+}
+.fas  {
+  padding: 10px;
+  font-size: 50px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+@media (max-width: 950px) {
+	.fas {
+		font-size: 35px;
+		width: 40px;
+  	}
+}
+@media (max-width: 650px) {
+	.fas {
+		font-size: 25px;
+		width: 30px;
+  	}
+}
+.fa-video, .fa-volume-up, .fa-bolt, .fa-pencil-ruler, .fa-paint-brush, .fa-ship {
+	color: #12a8e1;
+}
+.services-icon {
+	float: left;
+}
+.services-description {
+	float: right;
+	width: 70%;
+	font-size: 1.3em;
+	color: #808080;
+}
